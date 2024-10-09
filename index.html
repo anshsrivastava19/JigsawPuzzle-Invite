@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jigsaw Puzzle Prom Invite</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Puzzle Containers -->
+  <div id="level1" class="puzzle-container">
+    <h2>Level 1: [Memory/Place]</h2>
+    <div id="puzzle1"></div>
+    <button id="hintBtn1" onclick="showHint(1)">Need a hint?</button>
+    <p id="hint1" style="display: none;">"You always know how to figure things out, just like you figured out this piece!"</p>
+  </div>
+
+
+  <img src="jimandpam.jpg" alt="Puzzle Image" width="500">
+
+
+  <div id="level2" class="puzzle-container" style="display: none;">
+    <h2>Level 2: [Her Hobby/Passion]</h2>
+    <div id="puzzle2"></div>
+    <button id="hintBtn2" onclick="showHint(2)">Need a hint?</button>
+    <p id="hint2" style="display: none;">"You're amazing at everything you do!"</p>
+  </div>
+
+  <div id="level3" class="puzzle-container" style="display: none;">
+    <h2>Level 3: [You and Her]</h2>
+    <div id="puzzle3"></div>
+  </div>
+
+  <!-- Final Message -->
+  <div id="finalMessage" style="display: none;">
+    <h2>Congratulations!</h2>
+    <p>You’ve solved all the puzzles, but there’s one last thing I hope you’ll solve… my heart!</p>
+    <p>Will you go to prom with me?</p>
+    <button id="yesBtn">YES</button>
+    <button id="noBtn">NO</button>
+  </div>
+
+  <!-- Audio for Music -->
+  <audio id="backgroundMusic" src="your-favorite-song.mp3" type="audio/mpeg" loop></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

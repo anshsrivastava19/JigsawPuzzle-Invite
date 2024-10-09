@@ -1,0 +1,68 @@
+/* Fonts and basic styling */
+body {
+    background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .puzzle-container {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #finalMessage {
+    display: none;
+  }
+  
+  #yesBtn, #noBtn {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+  }
+  
+  #yesBtn {
+    background-color: #FF6F91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #noBtn {
+    background-color: #ccc;
+    color: black;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .shake {
+    animation: shake-animation 0.5s;
+  }
+  
+  @keyframes shake-animation {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+  #finalMessage {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
